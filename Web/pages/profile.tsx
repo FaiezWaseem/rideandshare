@@ -1,3 +1,4 @@
+// @ts-nocheck
 import PageLayout from '@/components/page-layout';
 import { logOut, retrieveUserSession } from '@/data/Auth.api';
 import fetcher from '@/utils/fetcher';
@@ -571,6 +572,8 @@ function RideOffered({ ride }) {
       _dark={{
         background: 'coolGray.600',
       }}
+      as='a'
+      href={`ride/summary/${ride.id}`}
       shadow={2}
       p={2}
       m={2}

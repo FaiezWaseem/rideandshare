@@ -8,7 +8,6 @@ import {
   HStack,
   Image,
   Input,
-  Select,
   Spinner,
   Text,
   useColorModeValue,
@@ -123,13 +122,10 @@ export default function Rides() {
               </Box>
             </Box>
           </Box>
-          <HStack py={12} width='80%'>
-            <Text width={'30%'}>Filter By City :</Text>
-            <Select placeholder='Select City'>
-              <option value='karachi'>Karachi</option>
-              <option value='lahore'>Lahore</option>
-              <option value='islamabad'>Islamabad</option>
-            </Select>
+          <HStack>
+            <Text fontWeight={'bold'} color='app.green' fontSize={22}>
+              Rides Near You :
+            </Text>
           </HStack>
           <Box
             display={'flex'}
